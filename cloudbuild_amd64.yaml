@@ -1,5 +1,0 @@
-steps:
-  - name: 'docker'
-    args: [ 'buildx', 'create', '--name', 'mybuilder', '--use' ]
-  - name: 'docker'
-    args: [ 'buildx', 'build', '--platform', 'linux/amd64', '-t', 'asia-northeast1-docker.pkg.dev/future-309012/image-repo/rust-scratch:amd64-1.77-alpine', '--push', '.', ]
