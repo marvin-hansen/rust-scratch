@@ -1,4 +1,4 @@
-FROM rust:1.77-alpine3.19 as builder
+FROM rust:1.79-alpine3.19 as builder
 
 # Create the user and group files to run the binary as an unprivileged user.
 RUN mkdir /user && \
